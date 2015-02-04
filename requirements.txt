@@ -1,0 +1,5 @@
+audiotools==2.22
+eyeD3==0.7.5
+mutagen==1.27
+python-magic==0.4.6
+wsgiref==0.1.2
