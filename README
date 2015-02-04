@@ -1,0 +1,24 @@
+This is a python script which will copy all mp3 and m4a files recurisively from one directory into another.
+The copied directory will be built with the heirarchy:
+-target directory
+	-artist
+		-album
+			-song
+The song information is extracted from the file metadata and ignores the current file's name. If one of the three pieces of information cannot be found it will be replaced with the string "unknown".
+This project was built to copy the files from my Ipod to my computer with the proper song name due to an issue caused by gtkpod several years ago.
+
+
+the usage is either:
+	python transfer.py
+	which will copy all files 
+	from: "/Volumes/USER'S IPOD/iPod_Control/Music"
+	to: '/Users/daniel/Documents/music'
+
+		or 
+	
+	python transfer.py [origin directory] [destination directory]
+
+	it is important to note that if the destination directory does not the directory will be created.
+
+
+The program is currently crashing on mp3 files
